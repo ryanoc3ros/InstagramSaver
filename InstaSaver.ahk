@@ -1,5 +1,6 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-SendMode SendInput  ; Recommended for new scripts due to its superior speed and reliability.
+#Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Quick  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
@@ -10,7 +11,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 	IfWinActive, %A_ScriptFullPath%
 	{
 		SplashTextOn,,,Updated script,
-		Sleep, 400
+		Sleep, 200
 		SplashTextOff
 		Reload
 	}
